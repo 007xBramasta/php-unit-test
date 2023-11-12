@@ -1,0 +1,33 @@
+{
+    "name": "bramasta/belajar-php-unit-test",
+    "description": "Belajar PHP Unit Test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "007xBramasta",
+            "email": "bramasta026x@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bramasta\\Test\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bramasta\\Test\\": "tests"
+        }
+    },
+
+    "scripts": {
+        "test" : "phpunit --configuration phpunit.xml",
+        "test:product" : "phpunit --configuration phpunit.xml --testsuite product",
+        "test:counter" : "phpunit --configuration phpunit.xml --testsuite counter"
+    }
+}   
